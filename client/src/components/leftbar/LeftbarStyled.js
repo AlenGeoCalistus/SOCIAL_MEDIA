@@ -1,5 +1,7 @@
 import { Grid } from "@mui/material";
 import styled from "styled-components";
+import { device } from "../../breakpoints";
+
 
 export const LeftBarContainer = styled(Grid)` 
   display: flex;
@@ -9,5 +11,11 @@ export const LeftBarContainer = styled(Grid)`
   overflow: auto; 
   &::-webkit-scrollbar{
     display: none;
+  }
+  @media ${device.tablet} {
+    display: none;
+  }
+  @media ${device.laptop} {
+    display: flex;
   }
 `;
