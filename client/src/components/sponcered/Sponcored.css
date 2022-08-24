@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;600;700;800&family=Nunito:wght@200;300;400;500;700;800;900&display=swap");
+
+.sponsordedText {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: grey;
+  font-family: "Nunito", sans-serif;
+}
+.birthdayContainer {
+  display: flex;
+  align-items: center;
+}
+
+.birthdayImg {
+  max-width: 3rem ;
+  max-height: 3rem ;
+  margin-right: 10px;
+}
+
+.birthdayText {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #383a45;
+  font-family: "Nunito", sans-serif;
+}
+
+.adsImg {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 10px;
+}

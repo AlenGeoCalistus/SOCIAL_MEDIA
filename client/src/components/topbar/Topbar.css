@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;600;700;800&family=Nunito:wght@200;300;400;500;700&display=swap");
+
+.navLogo {
+  font-weight: 800 !important;
+  font-size: 1.5rem !important;
+}
+
+.navAvatar {
+  margin-left: 2rem;
+}
+
+.AppBar {
+  background: linear-gradient(135deg, #4f5261 0%, #383a45 50%) !important;
+}

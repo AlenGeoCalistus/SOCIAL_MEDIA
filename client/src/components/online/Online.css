@@ -1,0 +1,9 @@
+.contactsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rightbarOnlineFrnds {
+  padding: 0 0 !important;
+}
