@@ -2,7 +2,7 @@ MERN_SOCIAL_MEDIA_APPLICATION BUILD FROM SCRATCH.
 # 
 FEATURES 
 #
-1.You can able to sign up and login, Follow and Unfollow other users, Create Posts, Like and comment posts
+You can able to sign up and login, Follow and Unfollow other users, Create Posts, Like and comment posts
 #
 TECHNOLOGIES USED
 #
