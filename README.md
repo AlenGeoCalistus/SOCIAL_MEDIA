@@ -10,7 +10,7 @@ React js, Express js, Mongoose, Node js, Jwt, Redux, Material UI, Mantine UI.
 #
 # PREREQUISITIES
 
-Node js, React js, Mongodb (noSql)
+Node js, Npm, Express js, React js, Mongodb (noSql)
 #
 # GETTING STARTED
 
