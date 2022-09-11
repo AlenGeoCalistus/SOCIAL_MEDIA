@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Box } from "@mui/material";
+import { device } from "../../breakpoints";
 
 export const LogoSearchContainer = styled(Box)`
   display: flex;
@@ -20,6 +21,12 @@ export const SearchInput = styled("input")`
   outline: none;
   padding-left: 5px;
   width: 14rem;
+  @media ${device.tablet}{
+    width: 12.9rem;
+  }
+  @media ${device.laptop}{
+    width: 13.9rem;
+  }
 `;
 
 export const SearchIcon = styled(Box)`
@@ -30,4 +37,5 @@ export const SearchIcon = styled(Box)`
   border-radius: 20px;
   padding: 4px;
   color: white;
+  cursor: pointer;
 `;

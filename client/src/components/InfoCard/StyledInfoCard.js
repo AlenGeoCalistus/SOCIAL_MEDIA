@@ -53,12 +53,12 @@ export const LogoutBtn = styled(Button)`
   color: white !important;
   border: none;
   border-radius: 0.5rem !important;
-  background: var(--buttonBg) !important;
+  /* background: var(--buttonBg) !important; */
   transition: all 100ms ease-out !important;
   &:hover {
-    color: var(--orange) !important;
-    border: 2px solid var(--orange) !important;
+    color: #fff !important;
+    border: 2px solid #8224e3 !important;
     cursor: pointer;
-    background: transparent !important;
+    background: linear-gradient(90deg,#8224e3 0,#a968ec 50%,#8224e3 100%) !important;
   }
 `;

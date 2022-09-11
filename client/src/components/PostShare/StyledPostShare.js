@@ -31,6 +31,7 @@ export const ShareInput = styled("input")`
 export const PostOptions = styled(Box)`
   display: flex;
   justify-content: space-around;
+  width: 100%;
 `;
 export const PostOption = styled(Box)`
   padding: 5px;

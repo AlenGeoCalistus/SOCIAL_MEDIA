@@ -9,6 +9,8 @@ import AuthRoute from "./routes/AuthRoute.js";
 import UserRoute from "./routes/UserRoute.js";
 import PostRoute from "./routes/PostRoute.js";
 import UploadRoute from "./routes/UploadRoute.js";
+import chatRoute from "./routes/chatRoute.js";
+import messageRouter from "./routes/messageRoute.js";
 
 const app = express();
 
@@ -25,15 +27,16 @@ const PORT = process.env.PORT;
 
 const CONNECTION = process.env.MONGODB_CONNECTION;
 
-
 mongoose.connect(CONNECTION, () => {
   console.log("Connected to MongoDB");
 });
 
 app.use("/auth", AuthRoute);
-app.use("/user", UserRoute); 
+app.use("/user", UserRoute);
 app.use("/posts", PostRoute);
 app.use("/upload", UploadRoute);
+app.use("/chat", chatRoute);
+app.use("/message", messageRouter);
 
 app.listen(PORT, (err) => {
   if (err) {

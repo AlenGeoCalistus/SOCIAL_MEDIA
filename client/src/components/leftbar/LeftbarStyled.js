@@ -8,11 +8,11 @@ export const LeftBarContainer = styled(Grid)`
   flex-direction: column;
   gap: 1rem;
   height: 100vh;
-  overflow: auto; 
+  overflow-y: auto; 
   &::-webkit-scrollbar{
     display: none;
   }
-  @media ${device.tablet} {
+  @media ${device.mobileS} {
     display: none;
   }
   @media ${device.laptop} {

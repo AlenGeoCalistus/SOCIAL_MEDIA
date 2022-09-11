@@ -65,7 +65,9 @@ const ProfileCard = ({ location }) => {
             <FollowerLength>{user.following.length}</FollowerLength>
             <Followers>Following</Followers>
           </Follow>
-          {/* for profilepage */}
+
+
+          {/************************** ProfilePage **************************/}
           {location === "profilePage" && (
             <>
               <VDivider className="vl"></VDivider>

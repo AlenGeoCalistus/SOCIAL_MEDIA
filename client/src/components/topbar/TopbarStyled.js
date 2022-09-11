@@ -1,4 +1,4 @@
-import { styled, Grid, Box, Avatar, Button } from "@mui/material";
+import { styled, Grid, Box, Avatar, Button, AppBar } from "@mui/material";
 
 export const GridContainer = styled(Grid)(({ theme }) => ({
   height: "100%",
@@ -7,6 +7,14 @@ export const GridContainer = styled(Grid)(({ theme }) => ({
   display: "flex",
   padding: "0 20px",
 }));
+
+export const Appbar = styled(AppBar)(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    width: '100%'
+  },
+  
+}));
+
 export const GridItem = styled(Grid)(({ theme }) => ({
   // flexDirection: "row",
   // justifyContent: "space-between",
@@ -25,8 +33,8 @@ export const LeftContainer = styled(Box)(({ theme }) => ({
 }));
 export const LogoBox = styled(Box)(({ theme }) => ({
   paddingRight: "20px",
-  fontSize:'1.2rem',
-  fontWeight:'bold',
+  fontSize: "1.2rem",
+  fontWeight: "bold",
   minWidth: "8rem",
   "&:hover": {
     color: "rgb(130, 36, 227)",

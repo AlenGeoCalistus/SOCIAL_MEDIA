@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 // import "./InfoCard.css";
 import { UilPen } from "@iconscout/react-unicons";
 import ProfileModal from "../ProfileModal/ProfileModal";
@@ -17,6 +18,7 @@ import {
 } from "./StyledInfoCard";
 
 const InfoCard = () => {
+  const navigate  = useNavigate()
   const dispatch = useDispatch();
   const params = useParams();
   const [modalOpened, setModalOpened] = useState(false);
@@ -69,19 +71,19 @@ const InfoCard = () => {
         <Span>
           <BoldTxt>Status </BoldTxt>
         </Span>
-        <Span>{profileUser.relationship}</Span>
+        <Span>: {profileUser.relationship}</Span>
       </InfoContainer>
       <InfoContainer className="info">
         <Span>
           <BoldTxt>Lives in </BoldTxt>
         </Span>
-        <Span>{profileUser.livesIn}</Span>
+        <Span> : {profileUser.livesIn}</Span>
       </InfoContainer>
       <InfoContainer className="info">
         <Span>
           <BoldTxt>Works at </BoldTxt>
         </Span>
-        <Span>{profileUser.worksAt}</Span>
+        <Span> : {profileUser.worksAt}</Span>
       </InfoContainer>
 
       <LogoutBtn className="button logout-button" onClick={handleLogOut}>

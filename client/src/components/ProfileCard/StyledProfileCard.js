@@ -22,6 +22,8 @@ export const ProfileImgContainer = styled(Box)`
 
 export const CoverImage = styled("img")`
   width: 100%;
+  height: 15rem;
+  object-fit: cover;
 `;
 
 export const ProfileImage = styled(Avatar)`
@@ -31,6 +33,7 @@ export const ProfileImage = styled(Avatar)`
   position: absolute !important;
   bottom: -3rem !important;
   box-shadow: var(--profileShadow) !important;
+  cursor: pointer;
   &:hover{
     transform: scale(1.1);
     transition: all 200ms ease-in-out

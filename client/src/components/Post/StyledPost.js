@@ -31,9 +31,14 @@ export const LikeImg = styled("img")`
 `;
 export const CommentImg = styled("img")``;
 export const ShareImg = styled("img")``;
-export const Span = styled("span")`
-  color: lightgray;
-  font-size: 12px;
+// export const Span = styled("span")`
+//   color: lightgray;
+//   font-size: 12px;
+// `;
+export const LikeText = styled("span")`
+  color: grey;
+  font-size: 17px;
+  font-weight: bold;
 `;
 export const PostDtlContainer = styled(Box)``;
 export const PostName = styled("span")``;

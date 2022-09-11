@@ -11,6 +11,7 @@ import { AppBar, Avatar, Badge, Menu, MenuItem } from "@mui/material";
 import React, { useState } from "react";
 import "./Topbar.css";
 import {
+  Appbar,
   AvatarBox,
   GridContainer,
   GridItem,
@@ -33,7 +34,7 @@ function Topbar() {
   const [open, setOpen] = useState(false);
   return (
     <div>
-      <AppBar
+      <Appbar
         color="navbarbg"
         position="static"
         elevation={15}
@@ -48,7 +49,7 @@ function Topbar() {
             </LeftContainer>
           </GridItem>
           <GridItemIcon item sx={6} sm={6} md={6}>
-            <IconsContainer>
+            <IconsContainer> 
               <NavButtons
                 className="navButtons"
                 variant="contained"
@@ -151,7 +152,7 @@ function Topbar() {
           <MenuItem onClick={() => setModalOpened(true)}>Edit Profile</MenuItem>
           <MenuItem>Logout</MenuItem>
         </Menu>
-      </AppBar>
+      </Appbar>
       {modalOpened && (
         <ProfileModal
           modalOpened={modalOpened}
